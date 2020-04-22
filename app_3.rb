@@ -5,7 +5,7 @@ require_relative 'lib/game'
 require_relative 'lib/player'
 require_relative 'lib/game'
 
-
+class game 
 def perform
 	my_game = Game.new(init, 100)
 	while (my_game.is_still_ongoing?) do
@@ -74,3 +74,4 @@ def user_check(str,nb_enemy)
 	return false
 end
 perform
+end

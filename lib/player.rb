@@ -53,7 +53,7 @@ class HumanPlayer < Player
     puts "You found a lvl #{new_weapon_1v1} weapon"
     if new_weapon_1v1 > @weapon_level then
       @weapon_level = new_weapon_1v1
-      puts "Yeah ! This weapon is better than your current weapon : you have "+"#{@weapon_level}".green + "weapon"
+      puts "Yeah ! This weapon is better than your current weapon : you have "+"#{@weapon_level}" + "weapon"
     else
       puts "Your current weapon is too stronger ! too bad"
     end
@@ -71,7 +71,7 @@ class HumanPlayer < Player
         tmp = 50 - (life_points - 100)
         @life_points = 100
       end
-      puts "Yeah, you found a +"+"50".green+" health pack ! You gained +"+"#{tmp}".green+" HP"
+      puts "Yeah, you found a +"+"50"+" health pack ! You gained +"+"#{tmp}"+" HP"
     else
       @life_points = life_points + 80
       tmp = 80
@@ -79,11 +79,10 @@ class HumanPlayer < Player
         tmp = 80 - (life_points - 100)
         @life_points = 100
       end
-      puts "Yeah, you found a +"+"80".green+" health pack ! You gained +"+"#{tmp}".green+" HP"
+      puts "Yeah, you found a +"+"80"+" health pack ! You gained +"+"#{tmp}"+" HP"
     end
   end
   
 
 end
-binding.pry
 puts "end of file"
